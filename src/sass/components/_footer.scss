@@ -1,0 +1,294 @@
+.footer{
+  flex-shrink: 0;
+}
+
+.footer-wra {
+    margin-top: 60px;
+    width: 100%;
+    height: 77px;
+    background-color: #F7F7F7;
+    display:flex;
+    align-items:center;
+    justify-content: center; 
+}
+
+
+.footer-title {
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #545454;
+padding-top: 30px;
+padding-bottom: 28px;
+text-align: center;
+
+display: block;
+
+}
+
+.footer-icon{
+    width: 14px;
+    height: 12.88px;
+}
+
+
+/*Модальное окно*/
+
+.footer-modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0, 0.8);
+
+   
+   
+}
+
+.footer-content{
+  background-color: #F7F7F7
+  ;
+  
+  padding: 15px;
+  border: 1px solid #888;
+  width: 100%;
+  height: 4100px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  
+    
+    @include mq (tablet) {
+     
+     
+    }
+    @include mq(desktop) {
+      background-color: #F7F7F7
+    ;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 900px;
+    height: 1470px;
+    border: 1px solid rgba(0, 0, 0, .2);
+      
+    }
+      
+}
+
+
+  
+.footer-close{
+    color: black;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: right;
+    cursor: pointer;
+    
+    
+}
+
+
+  
+.footer-link{
+  text-decoration: underline;
+  cursor: pointer;
+}
+  
+
+
+/*Наша команда*/
+
+.team-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -15px;
+  margin-top: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+  
+   
+   
+    @include mq (tablet) {
+      display: flex;
+      flex-wrap: wrap;
+     
+      justify-content: center;
+     
+    }
+    @include mq(desktop) {
+      display: flex;
+    flex-wrap: wrap;
+    
+
+   
+    }
+
+
+
+  }
+
+ 
+  
+  
+  .team-caption-list {
+    display: inline-block;
+   
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    border-radius: 0px 0px 4px 4px;
+    
+    
+    margin-left: 15px;
+    margin-top: 15px;
+    max-width: 270px;
+    
+
+    @include mq (tablet) {
+      flex-basis: calc(100% / 2 - 15px);
+   
+     
+    }
+    @include mq(desktop) {
+      flex-basis: calc(100% / 3 - 15px);
+      
+    
+
+   
+    }
+
+
+    
+  }
+  
+  .team-caption-list:last-child {
+    margin-right: 0;
+  }
+  
+
+  
+  .team-caption {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    margin-top: 40px;
+
+  }
+  .team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+   
+
+  }
+
+  .footer-info{
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  }
+
+.footer-text{
+  display: block;
+  white-space: pre-line;
+  
+ 
+
+
+
+  @include mq (tablet) {
+    display: inline-block;
+   
+  }
+  @include mq(desktop) {
+  display: inline-block;
+  
+
+ 
+  }
+
+
+}
+
+
+  
+  .team-captiom-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  /*наша команда текст*/
+  .team-desc {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--title-text-color);
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .team-icon-list {
+    display: flex;
+    padding-top: 16px;
+    justify-content: center;
+  }
+  
+  .team-icon {
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .team-icon:last-child {
+    margin-right: 0;
+  }
+  
+  .icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .icon:hover,
+  .icon:focus {
+    fill: #ffffff;
+    background-color: #dc143c;
+  }
+  
+  .icon-social-network {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .icon:hover .icon-social-network,
+  .icon:focus .icon-social-network {
+    fill: #ffffff;
+  }
+
+  .footter-wrapper{
+    overflow: hidden;
+  }
+
+
+  .team-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }

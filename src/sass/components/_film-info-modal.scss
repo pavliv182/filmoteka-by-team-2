@@ -1,0 +1,229 @@
+.backdrop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .modal {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 280px;
+    background-color: #fff;
+    padding: 48px 20px 40px 20px;
+    @include mq (tablet) {
+      width: 704px;
+      // height: 552px;
+      padding: 40px 72px 40px 36px;
+    }
+    @include mq(desktop) {
+      width: 806px;
+      // height: 552px;
+      padding: 40px 12px;
+    }
+  }
+
+  .modal-btn-close {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 8px;
+  }
+  .icon-modal {
+    fill: black;
+    width: 14px;
+    height: 14px;
+  }
+
+  .film-container {
+    width: 100%;
+    height: 100%;  
+    @include mq (tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+.image-film-container {
+  width: 240px;
+  // height: 357px;
+  margin-bottom: 20px;
+  @include mq (tablet) {
+    width: 264px;
+    // height: 374px;
+    margin-right: 68px;
+  }
+  @include mq (desktop) {
+    width: 375px;
+    // height: 478px;
+    margin-right: 16px;
+  }
+}
+.film-image {
+  width: 240px;
+  
+  object-fit: cover;	
+  @include mq (tablet) {
+    width: 264px;
+    
+  }
+  @include mq (desktop) {
+    width: 375px;
+    
+  }
+}
+.film-title {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.15;
+letter-spacing: 0em;
+text-align: left;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 20px;
+  @include mq (desktop) {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+}
+.film-about-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.film-about-textrow {
+width: 100%;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color: #8C8C8C;
+margin-bottom: 8px;
+text-transform: capitalize;
+&:last-child {
+  margin-bottom: 0px;
+}
+}
+.textrow-id {
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;  
+}
+.textrow-genres {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;  
+}
+.inbox-id {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #FF6B01;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+.inbox-slash {
+  width: 8px;
+  height: 16px;
+  color: #8C8C8C;
+  margin-left: 1px;
+  margin-right: 7px;
+}
+.inbox-span {
+  background-color: #F7F7F7;
+  padding: 1px 4px;
+  border-radius: 5px;
+}
+.title-about {
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+text-transform: uppercase;
+color:#000000;
+margin-bottom: 8px;
+}
+.film-about-text-container {
+  height: 100px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+.film-about-text {
+width: 240px;
+font-size: 12px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 26px;
+  @include mq(tablet) {
+    width: 264px;
+  }
+  @include mq(desktop) {
+    width: 391px;
+  }
+} 
+.film-btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.film-add-button {
+  width: 110px;
+  height: 44px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #FF6B01;
+    color: #fff;
+    border: none;
+  }
+  @include mq (tablet) {
+    width: 125px;
+  }
+  @include mq (desktop) {
+    width: 136px;
+  }
+}
+
+

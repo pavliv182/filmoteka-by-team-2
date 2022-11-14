@@ -1,0 +1,360 @@
+/* Header */
+.svg {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+.header {
+
+    max-width: auto;
+
+    // margin-left: auto;
+    // margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+
+    background-image:
+        url(/src/images/hero-filmoteka.jpg);
+
+    @include mq(tablet-only) {
+        background-image: url(/src/images/background1-tablet.jpg);
+
+    }
+
+    @include mq(mobile-only) {
+        background-image: url(/src/images/background1-mobile.jpg);
+    
+    }
+}
+
+.header-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 216px;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+
+    @include mq(mobile-only) {
+        height: 230px;
+        padding-top: 44px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+.header-library {
+
+    max-width: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image:
+        url(/src/images/header-bg.jpg);
+
+    @include mq(tablet-only) {
+        height: 219px;
+        background-ima1ge: url(/src/images/background2-tablet.jpg);
+
+
+    }
+
+    @include mq(mobile-only) {
+        height: 230px;
+        background-image: url(/src/images/background2-mobile.jpg);
+
+    }
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+// .svg{
+//     @include mq(mobile-only) {
+//     margin-top: 42px;
+//     margin-left: 27px;
+//     }
+// }
+
+.header_logo_svg {
+    @include mq(tablet) {
+        margin-top: 40px;
+        margin-left: 10px;
+
+    }
+}
+
+a.logo {
+
+    @include mq(mobile-only) {
+        display: none;
+    }
+
+}
+
+
+.title {
+    margin-left: 12px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: auto;
+
+    // @include mq(mobile-only) {
+    //         margin-top: 44px;
+    //     }
+
+    //     @include mq(tablet-only) {
+    //         margin-top: 49px;
+    //     }
+}
+
+.nav-list .nav-item:not(:last-child) {
+    margin-right: 39px;
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    padding-bottom: 3px;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(255, 255, 255, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #FF6B08;
+}
+
+.nav-link.current::after,
+.nav-link:hover::after {
+    position: absolute;
+    content: '';
+
+    width: 100%;
+    height: 3px;
+    display: block;
+
+    left: 0%;
+    bottom: 0%;
+    background-color: #FF001B;
+}
+
+.search-form {
+    @include mq(mobile-only) {
+        width: 280px;
+    }
+
+    @include mq(tablet-only) {
+        width: 336px;
+    }
+
+    margin-top: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 394px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 1);
+
+    @include mq(tablet-only) {
+        max-width: 336px;
+    }
+
+
+}
+
+.input:focus .search-form {
+    -webkit-box-shadow: 0px 0px 25px 8px #FF6B01;
+
+    box-shadow: 0px 0px 25px 8px #FF6B01;
+}
+
+.input {
+    border: none;
+    width: 380px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    background-color: transparent;
+    color: #ffffff;
+
+
+    @include mq(tablet-only) {
+        width: 336px;
+    }
+
+    @include mq(mobile-only) {
+        width: 280px;
+    }
+
+
+    &:focus {
+
+        border: none;
+        background-color: transparent;
+        outline: none;
+        border-radius: 8px;
+        padding-left: 8px;
+        margin-right: 9px;
+        margin-bottom: 2px;
+
+        -webkit-box-shadow: 0px 0px 15px 2px #FF6B01;
+        box-shadow: 0px 0px 15px 1px #FF6B01;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+.input__btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #FF001B;
+}
+
+.ishidden {
+
+    //    display: none;
+    opacity: 0;
+
+    transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.wrapper-btn {
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-watched {
+    width: 148px;
+    height: 42px;
+    margin-right: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+
+.btn-queue {
+    width: 148px;
+    height: 42px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.button-checced {
+    background-color: rgba(255, 107, 1, 1);
+    box-shadow: 0px 8px 43px rgba(255, 107, 1, 0.6);
+}
+.message-library-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+.icon-smile {
+    fill: #FF001B;
+    width: 20px;
+    height: 20px;
+        @include mq (tablet) {
+        width: 30px;
+        height: 30px;
+      }
+  }
+.message-library {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0em;
+    text-align: center;
+    color:  black;
+    
+    @include mq (tablet) {
+      font-size: 25px;
+    }
+    @include mq (desktop) {
+      font-size: 30px;
+    }
+  }
